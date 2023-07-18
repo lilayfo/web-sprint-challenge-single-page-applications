@@ -1,10 +1,24 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom"
+import PizzaApp from "./PizzaApp";
+import Pizza from './Assets/Pizza.jpg'
+import PizzaForm from "./PizzaForm";
+import "./App.css";
+
 
 const App = () => {
   return (
     <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      <nav className="navbar">
+       <Link to="/">Home</Link>
+      <Link to="/pizza">Form</Link>
+      </nav>
+      <h1>BloomTech Eats</h1>
+      <img src={Pizza} alt="image of pizza"></img>
+      <Routes>
+        <Route path="/" element={<PizzaApp />}>Home</Route>
+        <Route path="/pizza" element={<PizzaForm />}/>
+        </Routes>
     </>
   );
 };

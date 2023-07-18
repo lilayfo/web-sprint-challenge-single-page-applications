@@ -36,3 +36,179 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+/* Global styles */
+body {
+  font-family:'Playfair-Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+  color: #FFFFFF;
+
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Page container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+}
+
+.pizza-app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pizza-app img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#order-pizza {
+  padding: 10px 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Playfair-Display', serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#order-pizza:hover {
+  background-color: #e6005c;
+}
+
+/* Additional styles specific to PizzaApp and PizzaForm components can be added here */
+
+.pizza-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pizza-form h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.pizza-form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.pizza-form input,
+.pizza-form select {
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.pizza-form button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pizza-form button:hover {
+  background-color: var(--secondary-color);
+}
